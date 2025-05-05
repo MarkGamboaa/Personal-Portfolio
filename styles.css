@@ -1,0 +1,34 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the navigation items */
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Add spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Change color on hover */
+}
