@@ -8,8 +8,6 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
 html{
@@ -24,6 +22,7 @@ a, .btn{
     transition: all 0.3s ease-in-out;
 }
 
+/* NAVBAR */
 nav, .nav-links{
     display: flex;
 }
@@ -50,4 +49,33 @@ a:hover{
     color: grey;
     text-decoration: underline;
     text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
 }
