@@ -261,6 +261,7 @@ section{
 .about-details-containers{
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .about-containers,
