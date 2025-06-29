@@ -30,6 +30,11 @@
             >
           </li>
           <li>
+            <a href="#certifications" class="nav-underline hover:text-gray-500"
+              >Certifications</a
+            >
+          </li>
+          <li>
             <a href="#projects" class="nav-underline hover:text-gray-500"
               >Projects</a
             >
@@ -78,6 +83,13 @@
                 onclick="toggleMenu()"
                 class="block px-4 py-2 hover:bg-gray-100"
                 >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#certifications"
+                class="block px-4 py-2 hover:bg-gray-100 menu-link"
+                >Certifications</a
               >
             </li>
             <li>
@@ -140,7 +152,7 @@
     
 
     <!-- About Section -->
-    <section id="about" class="h-screen mx-7 px-6 py-10 relative bg-white scroll-animate">
+    <section id="about" class="h-screen mx-7 px-6 py-10 relative bg-white scroll-animate scroll-mt-20">
       <div class="max-w-4xl w-full mx-auto h-full flex flex-col">
       <div class="text-center">
         <p class="font-semibold">Get To Know More</p>
@@ -176,7 +188,7 @@
 
     <!-- Experience Section -->
       </div>
-    <section id="experience" class="h-screen px-6 py-10 relative bg-white scroll-animate">
+    <section id="experience" class="h-screen px-6 py-10 relative bg-white scroll-animate scroll-mt-20">
       <div class="max-w-4xl w-full mx-auto h-full flex flex-col">
       <div class="text-center">
         <p class="font-semibold">Explore My</p>
@@ -206,76 +218,28 @@
           <button id="backend-showall" class="mt-4 px-4 py-2 bg-gray-800 text-white rounded hover:bg-black transition">Show All</button>
         </div>
       </div>
-      <!-- Modals for skills -->
-      <div id="frontend-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden px-8 transition-all duration-300 opacity-0 scale-95">
-        <div class="bg-white rounded-xl shadow-lg p-8 max-w-md w-full relative transition-all duration-300">
-          <button id="frontend-close" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl">&times;</button>
-          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">Frontend Skills</h2>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">HTML</span>
-              <div class="text-xs text-gray-500">Experienced</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">CSS</span>
-              <div class="text-xs text-gray-500">Experienced</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">SASS</span>
-              <div class="text-xs text-gray-500">Intermediate</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">JavaScript</span>
-              <div class="text-xs text-gray-500">Basic</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">UI/UX</span>
-              <div class="text-xs text-gray-500">Intermediate</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">Bootstrap</span>
-              <div class="text-xs text-gray-500">Basic</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="backend-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden px-8 transition-all duration-300 opacity-0 scale-95">
-        <div class="bg-white rounded-xl shadow-lg p-8 max-w-md w-full relative transition-all duration-300">
-          <button id="backend-close" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl">&times;</button>
-          <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">Backend Skills</h2>
-          <div class="grid grid-cols-2 gap-4">
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">PostgreSQL</span>
-              <div class="text-xs text-gray-500">Basic</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">Node JS</span>
-              <div class="text-xs text-gray-500">Basic</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">Express JS</span>
-              <div class="text-xs text-gray-500">Basic</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">Git</span>
-              <div class="text-xs text-gray-500">Intermediate</div>
-            </div>
-            <div class="bg-gray-50 rounded-lg p-3 shadow text-center">
-              <span class="font-semibold">PHP</span>
-              <div class="text-xs text-gray-500">Basic</div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Arrow to Projects -->
     </section>
 
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="min-h-screen md:h-screen px-4 md:px-6 py-6 md:py-10 relative bg-white scroll-animate scroll-mt-20">
+      <div class="max-w-4xl w-full mx-auto h-full flex flex-col justify-center">
+        <div class="text-center">
+          <p class="font-semibold text-sm md:text-base">My</p>
+          <h1 class="text-2xl md:text-4xl font-bold mb-6 md:mb-8">Certifications</h1>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-6 md:gap-10 flex-1">
+          <div id="certifications-card-container" class="flex-1"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects Section -->
       </div>
     <section
       id="projects"
-      class="h-screen px-10 py-10 flex flex-col justify-center items-center relative bg-white scroll-animate"
+      class="h-screen px-6 py-10 flex flex-col justify-center items-center relative bg-white scroll-animate"
     >
       <div class="max-w-screen-xl w-full mx-auto h-full flex flex-col justify-center items-center">
       <div class="text-center">
@@ -312,7 +276,7 @@
     <!-- Contact Section with Footer inside -->
     <section
       id="contact"
-      class="h-screen flex flex-col bg-white scroll-animate"
+      class="h-screen flex flex-col bg-white scroll-animate scroll-mt-20"
     >
       <div class="max-w-screen-xl w-full mx-auto flex-1 flex flex-col items-center justify-center px-10 py-10">
         <p class="font-semibold">Get in Touch</p>
@@ -336,6 +300,7 @@
         <div class="flex justify-center gap-4 mb-4">
           <a href="#about" class="hover:underline">About</a>
           <a href="#experience" class="hover:underline">Experience</a>
+          <a href="#certifications" class="hover:underline">Certfications</a>
           <a href="#projects" class="hover:underline">Projects</a>
           <a href="#contact" class="hover:underline">Contact</a>
         </div>
@@ -344,6 +309,75 @@
     </section>
 
 
+    <!-- Modals for experience skills (moved outside section for full-page overlay) -->
+    <div id="frontend-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden px-8 transition-all duration-300 opacity-0 scale-95">
+      <div class="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto relative transition-all duration-300 flex flex-col">
+        <button id="frontend-close" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl">&times;</button>
+        <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">Frontend Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">HTML</span>
+            <div class="text-sm text-gray-500 mt-1">Experienced</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">CSS</span>
+            <div class="text-sm text-gray-500 mt-1">Experienced</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">SASS</span>
+            <div class="text-sm text-gray-500 mt-1">Intermediate</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">JavaScript</span>
+            <div class="text-sm text-gray-500 mt-1">Basic</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">UI/UX</span>
+            <div class="text-sm text-gray-500 mt-1">Intermediate</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">Bootstrap</span>
+            <div class="text-sm text-gray-500 mt-1">Basic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="backend-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden px-8 transition-all duration-300 opacity-0 scale-95">
+      <div class="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto relative transition-all duration-300 flex flex-col">
+        <button id="backend-close" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl">&times;</button>
+        <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">Backend Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">PostgreSQL</span>
+            <div class="text-sm text-gray-500 mt-1">Basic</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">Node JS</span>
+            <div class="text-sm text-gray-500 mt-1">Basic</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">Express JS</span>
+            <div class="text-sm text-gray-500 mt-1">Basic</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">Git</span>
+            <div class="text-sm text-gray-500 mt-1">Intermediate</div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-4 shadow text-center">
+            <span class="font-semibold">PHP</span>
+            <div class="text-sm text-gray-500 mt-1">Basic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for certifications (moved outside section for full-page overlay) -->
+    <div id="certifications-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden px-8 transition-all duration-300 opacity-0 scale-95">
+      <div class="bg-white rounded-xl shadow-lg p-8 max-w-4xl w-full max-h-[80vh] overflow-y-auto relative transition-all duration-300 flex flex-col">
+        <button id="certifications-close" class="absolute top-2 right-2 text-gray-500 hover:text-black text-2xl">&times;</button>
+        <div id="certifications-modal-content"></div>
+      </div>
+    </div>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
