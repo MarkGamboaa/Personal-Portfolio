@@ -84,3 +84,26 @@ body,
 .cert-link:hover {
   color: #1d4ed8;
 }
+
+/* Hamburger to X transformation */
+.hamburger-line {
+  width: 32px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+  display: block;
+}
+
+.hamburger-button.active .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-button.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hamburger-button.active .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
