@@ -1,20 +1,28 @@
-// Hamburger menu toggle with smooth transition
+// Hamburger menu toggle with X transformation
 const hamburgerBtn = document.getElementById("hamburger-button");
 const mobileMenu = document.getElementById("mobile-menu");
 if (hamburgerBtn && mobileMenu) {
   hamburgerBtn.addEventListener("click", () => {
     if (mobileMenu.classList.contains("hidden")) {
+      // Open menu and transform to X
       mobileMenu.classList.remove("hidden");
       setTimeout(() => {
         mobileMenu.classList.remove("opacity-0", "scale-95");
         mobileMenu.classList.add("opacity-100", "scale-100");
       }, 10);
+
+      // Transform to X
+      hamburgerBtn.classList.add("active");
     } else {
+      // Close menu and transform back to hamburger
       mobileMenu.classList.remove("opacity-100", "scale-100");
       mobileMenu.classList.add("opacity-0", "scale-95");
       setTimeout(() => {
         mobileMenu.classList.add("hidden");
       }, 300);
+
+      // Transform back to hamburger
+      hamburgerBtn.classList.remove("active");
     }
   });
 }
@@ -29,6 +37,11 @@ menuLinks.forEach((link) => {
       setTimeout(() => {
         mobileMenu.classList.add("hidden");
       }, 300);
+
+      // Reset hamburger to original state
+      if (hamburgerBtn) {
+        hamburgerBtn.classList.remove("active");
+      }
     }
   });
 });
