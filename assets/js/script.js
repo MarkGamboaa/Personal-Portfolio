@@ -295,8 +295,8 @@ function renderCertificationsCard() {
           .slice(0, 4)
           .map(
             (cert) => `
-          <div class="flex flex-col md:flex-row items-start gap-1 md:gap-4 bg-gray-50 rounded-lg p-2 md:p-4 shadow-sm">
-            <img src="${cert.img}" alt="${cert.issuer} logo" class="w-8 h-8 md:w-16 md:h-16 object-contain rounded bg-white border border-gray-200 flex-shrink-0 mx-auto md:mx-0" />
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-1 md:gap-4 bg-gray-50 rounded-lg p-2 md:p-4 shadow-sm">
+            <img src="${cert.img}" alt="${cert.issuer} logo" class="w-8 h-8 md:w-16 md:h-16 object-contain rounded bg-white border border-gray-200 flex-shrink-0" />
             <div class="flex-1 min-w-0 text-center md:text-left">
               <h3 class="font-semibold text-xs md:text-base leading-tight mb-1">${cert.title}</h3>
               <p class="text-xs md:text-sm text-gray-600 mb-1">${cert.issuer}</p>
