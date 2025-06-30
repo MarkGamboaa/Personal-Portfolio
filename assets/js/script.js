@@ -101,6 +101,24 @@ if (backendClose && backendModal) {
   backendClose.addEventListener("click", () => hideModal(backendModal));
 }
 
+// Close frontend modal when clicking outside the modal box
+if (frontendModal) {
+  frontendModal.addEventListener("mousedown", function (e) {
+    if (e.target === frontendModal) {
+      hideModal(frontendModal);
+    }
+  });
+}
+
+// Close backend modal when clicking outside the modal box
+if (backendModal) {
+  backendModal.addEventListener("mousedown", function (e) {
+    if (e.target === backendModal) {
+      hideModal(backendModal);
+    }
+  });
+}
+
 // Project Carousel with fade animation
 const projects = [
   {
